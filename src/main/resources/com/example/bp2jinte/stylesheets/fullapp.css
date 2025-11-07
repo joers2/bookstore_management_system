@@ -1,0 +1,234 @@
+/* Font setup */
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+
+* {
+    -fx-font-family: "Montserrat";
+    -fx-font-weight: 500;
+    -fx-text-fill: #333333;
+}
+
+/* Algemene Styling */
+.root {
+    -fx-background-color: #F5F5F5;
+}
+
+.page-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #333333;
+    -fx-alignment: center;
+}
+
+.center-content {
+    -fx-spacing: 40;
+    -fx-padding: 40;
+    -fx-alignment: top-center;
+}
+
+/* Navigatie  */
+.sidebar {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #D9D9D9;
+    -fx-pref-width: 180;
+}
+
+.sidebar-title {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-background-color: #F5F5F5;
+    -fx-alignment: center;
+    -fx-padding: 10;
+    -fx-border-color: #D9D9D9;
+    -fx-border-width: 0 0 1 0;
+    -fx-pref-width: 180;
+    -fx-pref-height: 80;
+}
+
+.nav-list {
+    -fx-padding: 20 0 0 20;
+    -fx-spacing: 15;
+}
+
+.nav-item {
+    -fx-text-fill: #333333;
+    -fx-font-size: 14px;
+    -fx-padding: 8 12;
+    -fx-cursor: hand;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.nav-item:hover {
+    -fx-background-color: #E5E9F0;
+}
+
+.nav-item.active {
+    -fx-font-weight: bold;
+    -fx-background-color: #DCE5F2;
+    -fx-border-width: 0 0 0 4px;
+    -fx-border-color: #2C5D9F;
+}
+
+/* Login Scherm */
+.logout-button {
+    -fx-background-color: transparent;
+    -fx-font-size: 13px;
+    -fx-text-fill: #333333;
+    -fx-alignment: CENTER_LEFT;
+    -fx-cursor: hand;
+    -fx-padding: 8 12;
+}
+
+.logout-button:hover {
+    -fx-background-color: #F0F0F0;
+}
+
+.logout-button:hover .logout-label {
+    -fx-text-fill: #E53935;
+}
+
+.logout-icon {
+    -fx-fit-width: 18px;
+    -fx-fit-height: 18px;
+    -fx-opacity: 0.7;
+}
+
+.logout-button:hover .logout-icon {
+    -fx-opacity: 1.0;
+}
+
+/* Home Scherm */
+.content-grid {
+    -fx-hgap: 120;
+    -fx-vgap: 100;
+    -fx-alignment: center;
+}
+
+.tile {
+    -fx-pref-width: 180;
+    -fx-pref-height: 180;
+    -fx-background-color: #2C5D9F;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: normal;
+    -fx-alignment: center;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 6, 0, 0, 3);
+    -fx-transition: all 0.2s ease-in-out;
+}
+
+.tile:hover {
+    -fx-background-color: #1E4B86;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0, 0, 4);
+}
+
+/* Klant Scherm */
+.klant-container {
+    -fx-background-color: #5A7CB3;
+    -fx-padding: 40;
+    -fx-background-radius: 12;
+    -fx-alignment: center;
+    -fx-max-width: 600;
+    -fx-max-height: 500;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 10, 0, 0, 4);
+}
+
+
+.klant-container .text-field {
+    -fx-pref-width: 200;
+    -fx-background-radius: 8;
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: transparent;
+    -fx-prompt-text-fill: #999999;
+    -fx-padding: 6 10;
+    -fx-font-size: 13px;
+}
+
+.klant-container .button {
+    -fx-pref-width: 120;
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #333333;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-font-weight: 500;
+}
+
+.klant-container .button:hover {
+    -fx-background-color: #F0F0F0;
+}
+
+.klant-container .list-view {
+    -fx-background-radius: 8;
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 10;
+}
+
+/* Verkoop Scherm */
+.verkoop-container {
+    -fx-background-color: #5A7CB3; /* soft green tone */
+    -fx-padding: 40;
+    -fx-background-radius: 12;
+    -fx-alignment: center;
+    -fx-max-width: 600;
+    -fx-max-height: 400;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 10, 0, 0, 4);
+}
+
+.verkoop-container .text-field {
+    -fx-pref-width: 200;
+    -fx-background-radius: 8;
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: transparent;
+    -fx-prompt-text-fill: #999999;
+    -fx-padding: 6 10;
+    -fx-font-size: 13px;
+}
+
+.verkoop-container .button {
+    -fx-pref-width: 140;
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #333333;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-font-weight: 500;
+}
+
+.verkoop-container .button:hover {
+    -fx-background-color: #F0F0F0;
+}
+
+/* Voorraad scherm */
+.inner-stock-box {
+    -fx-background-color: #DCE5F2; /* light blue */
+    -fx-background-radius: 10;
+    -fx-padding: 20;
+    -fx-spacing: 12;
+    -fx-alignment: center;
+    -fx-pref-width: 250;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 2);
+}
+/* Transactie Scherm */
+.date-label {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: 600;
+    -fx-font-size: 13px;
+    -fx-min-width: 40px;
+    -fx-alignment: center-right;
+}
+
+.date-picker,
+.text-field {
+    -fx-background-radius: 8;
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: transparent;
+    -fx-prompt-text-fill: #999999;
+    -fx-padding: 6 10;
+}
+

@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+* {
+    -fx-font-family: "Montserrat";
+    -fx-text-fill: #333333;
+}
+
+/* Root background */
+.root {
+    -fx-background-color: #F5F5F5;
+}
+
+/* Title styling */
+.title-label {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+/* Blue registration box */
+.register-box {
+    -fx-background-color: #2C5D9F;
+    -fx-background-radius: 20;
+    -fx-padding: 40;
+    -fx-spacing: 15;
+    -fx-alignment: center;
+    -fx-max-width: 400;
+    -fx-min-width: 350;
+}
+
+/* Text and password fields */
+.text-field,
+.password-field {
+    -fx-max-width: 250;
+    -fx-background-radius: 6;
+    -fx-padding: 8 10 8 10;
+    -fx-font-size: 14px;
+    -fx-border-color: transparent;
+}
+
+/* Invalid field border (red highlight) */
+.text-field.invalid,
+.password-field.invalid {
+    -fx-border-color: #E53935;
+    -fx-border-width: 2;
+    -fx-background-insets: 0, 0 0 1 0;
+}
+
+/* Buttons  */
+.login-button {
+    -fx-background-color: white;
+    -fx-text-fill: #2C5D9F;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 8 20;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-pref-width: 140;
+}
+
+/* Button hover */
+.login-button:hover {
+    -fx-background-color: #EAEAEA;
+}
